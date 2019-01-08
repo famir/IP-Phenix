@@ -107,7 +107,7 @@
                         Implementation
                     </p>
                     <p class="mb-6">
-                       <div style="width: 80%;margin: auto;"><img src="img/architecture.png" class="img-fluid" alt="Responsive image"></div> 
+                       <div style="width: 80%;margin: auto;"><img style="margin-bottom: 50px;" src="img/architecture.png" class="img-fluid" alt="Responsive image"></div> 
                         The project is divided into two sub-sections: backend and frontend. <b>Backend</b> section consists of USB drone-pilot and Companion computer. USB drone pilot receives information from the sensors on drone and this information is transmitted to MavProxy inside the companion computer. USB Master inside the MavProxy receives the information and broadcasts it to the Android application through its TCP port.
                         In the <b>Frontend</b> part of the app the data get fetched by a Worker-Thread and passed over to the associated views in the GUI. The user gets a notification if the values reach a critical point. For example if the battery gets low the user can land the drone as soon as possible. This is to avoid problems with the drone. Each of these values can be toggled on or off in the Flight-Overlay.
                         The main screen is a First-Person-View from a connected camera. This is made possible by a modified USB-Video-Class (UVC)-Library made in native C++. The camera gets automatically recognized and activated once plugged in.
