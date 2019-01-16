@@ -66,16 +66,25 @@
                 <div class="col-lg-10 mx-auto">
                     <h2>Problem Statement</h2>
                     <p class="lead mb-5">
-                        Development of a mission control panel prototype for search and rescue drones in participation with the fire department KampLintfort and research project “Phenix” at HSRW.
+                        Development of a mission control panel prototype for
+                        search and rescue drones in participation with the
+                        fire department Kamp-Lintfort and research project
+                        “Phenix” at Hochschule-Rhein-Waal (HSRW)
                     </p>
                     <p class="mb-0">
-                        With the advent of technological advancements in the field of drones, there has been a growing need to implement drone usage for emergency services. Of interest to us is the Fire Service.
-
-                        Many well-funded Fire Departments now employ search and rescue drones as first responders when dealing with an emergency situation, before sending in their human personnel. The Kamp Lintfort Fire Department does not make this cut, as its a small and underfunded Fire Service that depends mostly on volunteer firefighters.
-
-                        HSRW in partnership with the Kamp Lintfort Fire Department came up with the Phenix Project which aims to create a fully functional search and rescue drone for assessing fire situations. The high point of this project is the development of the drone using cheap and easily purchased parts.
-
-                        Our team is tasked with developing the communication system of the Phenix Drone.
+                        Many well-funded Fire Departments now employ search
+                        and rescue drones as first responders when dealing with
+                        an emergency situation, before sending in their human
+                        personnel. HSRW in partnership with the Kamp-Lintfort
+                        Fire Department came up with the Phenix Project which
+                        aims to create a fully functional search and rescue drone
+                        for assessing fire situations. The high point of this project
+                        is the development of the drone using cheap and easily
+                        purchased parts.
+                    </p>
+                    <p>
+                        Our team is tasked with developing the communication
+                        system of the Phenix Drone.
                     </p>
                     <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#RelatedWork">Related Work</a>
                 </div>
@@ -83,23 +92,29 @@
         </div>
     </section>
     <!-- RelatedWork -->
-    <section class="content-section " id="RelatedWork" style="background-color: #dadada;">
+    <section class="content-section " id="RelatedWork" style="background-color: #efeaea;">
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <h2>Related Work</h2>
                     <p class="lead mb-5">
-                        There has been a significant amount of research on reliable ways to implement drones in firefighting.
+                        Drones used for firefighting operations and are equipped
+                        with add-ons, such as cameras to identify fire sources,
+                        hot spots, detect humans and animals, extinguishing
+                        agents etc.
 
                     </p>
                     <p class="mb-0">
-                        Nowadays, there are eight types of drones considered useful for firefighting: Aerones, Yuneec Typhoon H, Freefly Alta 8, DJI Inspire 1, DJI Zenmuse XT, DJI Zenmuse Z30, DJI Matrice 210 and FlyByCopters Thermal Surveying X8. These drones are used for firefighting operations and are equipped with add-ons, such as: thermal cameras to identify fire sources and hot spots, infrared cameras that detect humans and animals, extinguishing agents, high-definition cameras that can help with identification.
-                        Currently, a company called Aerones develops a drone specifically for firefighting that can fly up to 300 meters within six minutes, which is ideal for combating burning buildings. The greatest advantage of this one-man operable drone is that it can carry and guide a fire hose to heights that surpass the 30 meters ladder trucks. Furthermore, the drone is constantly tethered to a power supply, which ensures endless flight time.
-                        In conclusion, drones can help firefighting in many ways. They can bring important information that can save lives, disperse smoke in crucial areas or fight fire on considerable heights. There are some limiting factors like battery capacity, however, companies are researching and developing hybrid engines and in-air recharging methods.
-
+                        The greatest advantage of these drones is that they can
+                        carry and guide a fire hose to heights that surpass the 30
+                        meters ladder trucks and constantly tethered to a power
+                        supply, which ensures endless flight time.
+                        The Phenix drone is focused on fire detection and
+                        mission awareness capabilities.
                     </p>
                     <p>
-                        Schaft, P. v. (2018). Firefighting Drones Aim to Fly Higher, Help Save Lives. Retrieved 1 9, 2019, from www.roboticsbusinessreview.com: https://www.roboticsbusinessreview.com/unmanned/firefighting-drones-aim-to-fly-higher-save-lives/
+                        <h6> <small>Schaft, P. v. (2018). Firefighting Drones Aim to Fly Higher, Help Save Lives. Retrieved 1 9, 2019, from www.roboticsbusinessreview.com: <a target="_blank" href="https://www.roboticsbusinessreview.com/unmanned/firefighting-drones-aim-to-fly-higher-save-lives/">Click here to visit the page</a> </small></h6>
+                        
                     </p>
                     <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#Implementation">Implementation</a>
                 </div>
@@ -113,50 +128,75 @@
                 <div class="col-lg-10 mx-auto">
                     <h2>Implementation</h2>
                     <p class="lead mb-5">
-                        Implementation
+                        The project is divided into two sub-sections: backend
+                        and frontend
                     </p>
-                    <p class="mb-6">
-                        <div style="width: 80%;margin: auto;"><img style="margin-bottom: 50px;" src="img/architecture.jpg" class="img-fluid" alt="Responsive image"></div>
-                        The project is divided into two sub-sections: backend and frontend. <b>Backend</b> section consists of USB drone-pilot and Companion computer. USB drone pilot receives information from the sensors on drone and this information is transmitted to MavProxy inside the companion computer. USB Master inside the MavProxy receives the information and broadcasts it to the Android application through its TCP port.
-                        In the <b>Frontend</b> part of the app the data get fetched by a Worker-Thread and passed over to the associated views in the GUI. The user gets a notification if the values reach a critical point. For example if the battery gets low the user can land the drone as soon as possible. This is to avoid problems with the drone. Each of these values can be toggled on or off in the Flight-Overlay.
-                        The main screen is a First-Person-View from a connected camera. This is made possible by a modified USB-Video-Class (UVC)-Library made in native C++. The camera gets automatically recognized and activated once plugged in.
+                    <div class="mb-6">
+                        <div style="width: 80%;margin: auto;"><img style="margin-bottom: 50px;" src="img/architecture.jpeg" class="img-fluid" alt="Responsive image"></div>
 
-                    </p>
-                    <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 mt-5" href="#Evaluation">Evaluation and discussion</a>
+                        <p>
+                            <b>Backend</b> section consists of USB drone-pilot and Companion Computer. USB drone pilot receives information
+                            from the sensors on drone and this information is transmitted to MavProxy inside the Companion Computer.
+                            USB Master inside the MavProxy receives the information and broadcasts it to the Android application through
+                            its TCP port.
+                        </p>
+                        <p>
+                            In the <b>Frontend</b> part of the app the data get fetched by
+                            a Worker-Thread and passed over to the associated
+                            views in the GUI. The user gets a notification if the
+                            values reach a critical point. For example, if the battery
+                            gets low the user can land the drone as soon as possible. This is to avoid problems with the drone. Each of
+                            these values can be toggled on or off in the Flight-Overlay
+                        </p>
+                        <p>
+                            The main screen is a First-Person-View from a connected camera. This is made possible by a modified
+                            USB-Video-Class (UVC)-Library made in native C++.
+                            The camera gets automatically recognized and
+                            activated once plugged in.
+                        </p>
+
+                        <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 mt-5" href="#Evaluation">Evaluation and discussion</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Evaluation and discussion -->
-    <section class="content-section bg-primary" id="Evaluation" style="background-color:#dadada !important">
+    <section class="content-section bg-primary" id="Evaluation" style="background-color:#ffffff !important">
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <h2>Evaluation and discussion</h2>
                     <p class="lead mb-5">
-                        Although the implemented solution and methodology are pretty good and constitute a set of powerful tools to develop a mission control panel prototype for search and rescue drones. But there are still some of the provided outcomes which can be improved and extended further.
-
+                        We set out to develop the communication of the Phenix
+                        drone with the following functionalities in mind:
                     </p>
                     <p class="mb-0 ">
+                        <div style="width: 80%;margin: auto;"><img style="margin-bottom: 50px;" src="img/gui.jpeg" class="img-fluid" alt="Responsive image"></div>
                         <ul class="text-left">
                             <li>
-                                Develop the mobile application for all gadgets to make it platform independent.
+                                Drone FPV camera sends a realtime video stream to
+                                an accompanying Android app
                             </li>
                             <li>
-                                Research on different Fpv Cameras to get the high-quality video streaming and to analyze the effect of the video in compressed form. Because during compression over the internet it may lose some important information.
+                                Sensor data from the drone’s onboard computer is
+                                routed through a laptop computer used for drone
+                                control and mission planning. For onward
+                                transmission to the Android app as a video overlay
                             </li>
                             <li>
                                 The concept of implementing 3D mapping to identify the victims and current fire areas. This can be achieved by integrating the RGB and infrared channels to construct thick 3D environmental patterns.
 
                             </li>
-                            <li>
-                                Analyze the sensor values like flight time, altitude, and temperature to extend the more possible attributes and make it dynamic.
 
-                            </li>
-                            <li>
-                                The user interface can be improved to display the close-to real-time video stream and to analyze the previous results in graphical form.
-                            </li>
                         </ul>
+<p>
+                        On project completion, all this was achieved including a
+                        sound alert system notifying the drone operator when
+                        certain sensor values have exceeded a preset operation
+                        range (flight time, altitude, temperature and battery
+                        level).
+                    </p>
                     </p>
                     <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#Outlook">Outlook</a>
                 </div>
@@ -167,32 +207,36 @@
     <section class="content-section bg-light" id="Outlook">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-8 mx-auto" style="clear:both">
                     <h2>Outlook</h2>
                     <p class="lead mb-5">
-                        Outlook
+                        
                     </p>
                     <p class="mb-0">
                     <p class="mb-0 ">
-                        <ul class="text-left">
-                            <li>
-                                Drones are increasingly publicized in the use of unmanned aerial vehicles (UAVs) to carry out surveillance and bombing missions in foreign lands. The truth is that drones are more than just spying and military tools. They also come in handy in a wide variety of other settings, including <b>search and rescue efforts</b>.
-                            </li>
-                            <li>
-                                What makes drones attractive to searchers and rescuers is their ability to fly in, move around and get out of disaster zones and hard-to-reach sites without the danger of putting real pilots and crew in harm's way, and at a fraction of the cost of using a helicopter or plane.
+                        <div class=" " style="max-width: 220px;margin: auto;"><img style="margin-bottom: 50px;" src="img/output.jpeg" class="img-fluid" alt="Responsive image"></div>
 
-                            </li>
-                            <li>
-                                Strap a camera on a small quadcopter or drone, and you can get real-time overhead footage of a disaster area that can be used to assess the damage and look for survivors.
-
-                            </li>
-                        </ul>
+                    <p>
+                        Making the application platform
+                        independent.
                     </p>
+                    <p>
+                        3D mapping of victims and area
+                        under fire.
                     </p>
-                    <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#InAction">Project in action</a>
-                </div>
+                    <p>
+                        Drones save lives! Can be used
+                        as a First Aid help.
+                    </p>
+                    <p>
+                        Enhancement of the quality of
+                        video streaming.
+                    </p> 
+                </div>  
+                 <div style="clear:both;width:100%"><a class="btn btn-dark btn-xl js-scroll-trigger mt-5 text-center" href="#InAction">Project in action</a></div>
+                
             </div>
-        </div>
+            </div> 
     </section>
     <!-- Services -->
     <!--<section class="content-section bg-primary text-white text-center" id="services">
@@ -263,12 +307,12 @@
                 <h2 class="mb-5">Imaginery scenario of an incident</h2>
             </div>
             <div class="row no-gutters">
-                <div style="width:95%;margin:auto"><img src="img/mainphoto.jpg" class="img-fluid" alt="Responsive image"></div>
+                <div style="width:95%;margin:auto"><img src="img/mainphoto.jpeg" class="img-fluid" alt="Responsive image"></div>
             </div>
         </div>
     </section>
     <!-- Management -->
-    <section class="content-section " style="background-color: #dadada;">
+    <section class="content-section " style="background-color: aliceblue;">
         <div class="container text-center">
             <h2 class="mb-5">Project Management and Supervisors</h2>
             <div class="list-group">
